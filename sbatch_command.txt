@@ -1,0 +1,6 @@
+sbatch -p GPU --gres=gpu:v100-32:8 -t 48:00:00 --job-name run_transformer ./run_transformer.sh
+
+###
+           JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          29708404       GPU run_tran   clee18 PD       0:00      1 (Resources)
+          29708053 GPU-small Interact   clee18  R      29:50      1 v001

@@ -8,23 +8,23 @@
 #SBATCH --error=logs/%x-%j.err   # Save error logs separately
 
 # Load necessary modules
-module load cuda/12.6.1          # Ensure correct CUDA version
-module load python/3.8.6         # Use the correct Python version
+module load cuda/12.6.1          # Keep CUDA if needed
 
 # Activate Conda
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate emg2qwerty
-pip install hydra-core --quiet
 
-# Debugging info
+# Optional: double-check Python & hydra
 echo "Using Python from: $(which python)"
+echo "Using pip from: $(which pip)"
 echo "Python version: $(python --version)"
-echo "CUDA version:"
-nvcc --version
+python -c "import hydra; print('Hydra imported successfully:', hydra.__version__)"
 
-# Resume training from the best checkpoint
+# Resume training
 python -m emg2qwerty.train \
-  +user=generic \
-  +trainer.accelerator=gpu +trainer.devices=8 \
-  +cluster=slurm 
-  # +trainer.resume_from_checkpoint="/ocean/projects/cis250053p/clee18/emg2qwerty/logs/2025-03-15/12-16-38/job0_trainer.devices=8,user=generic/checkpoints/epoch=144-step=129920.ckpt"
+  user=generic \
+  trainer.accelerator=gpu \
+  trainer.devices=8 \
+  checkpoint="/ocean/projects/cis250053p/clee18/emg2qwerty/logs/2025-03-24/08-47-14/checkpoints/epoch=99-step=89600.ckpt" \
+  cluster=slurm \
+  +trainer.enable_progress_bar=true
