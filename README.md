@@ -19,7 +19,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 > *TODO - Check if the numbers above are correct (they're taken from the report).*
 > 
-> *TODO - Add a disclaimer about the testing procedure (model, # of epochs for training, size of the test set, etc.).*
+> *TODO - Add a disclaimer about the testing procedure (model (generic or personalized),  size of the test set, etc.) - see Table 3 in Meta report.*
 
 ## Experiments
 
