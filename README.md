@@ -26,13 +26,15 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 ### Long list of ideas:
 
 - [ ] **Experiment with data preprocessing and feature extractors**: 
-  - [ ] Modify the data loader to use past data only
-  - [ ] Run the training with a new band pass filter (up to 500 Hz)
+  - [ ] Modify the data loader to use past data only (suitable for online inference)  
+  - [ ] Run training with a new band-pass filter (up to 500 Hz)  
 - [ ] **Experiment with the model**: 
   - [ ] Incorporate transformer encoder
   - [ ] Incorporate LM module
+- [ ] **Experiment with the inference**: 
+  - [ ] Run online inference
 - [ ] **Experiment with hand animation (if time permits)**:
-  - [ ] Explore and incorporate [emg2pose](https://github.com/facebookresearch/emg2pose) dataset
+  - [ ] Explore and incorporate the [emg2pose](https://github.com/facebookresearch/emg2pose) dataset  
 
 > *Add a summary of changes.*
 
