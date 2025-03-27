@@ -6,16 +6,16 @@ This project explores the use of surface electromyography (sEMG) signals as an a
 
 We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresearch/emg2qwerty), which uses the Meta emg2qwerty dataset - the largest publicly available sEMG-to-keyboard dataset. Below is our reproduced baseline:
 
-| User   | Test CER | Test Loss (Greedy) | Test Loss (Beam Search) |
-|--------|----------|--------------------|--------------------------|
-| User0  | 20.57%   | 1.17               | 1.17                     |
-| User1  | 10.32%   | 0.65               | 0.65                     |
-| User2  | 8.41%    | 0.51               | 0.51                     |
-| User3  | 8.93%    | 0.47               | 0.47                     |
-| User4  | 7.91%    | 0.37               | 0.37                     |
-| User5  | 5.81%    | 0.38               | 0.38                     |
-| User6  | 14.06%   | 0.84               | 0.84                     |
-| **Average** | **10.86%**  | **0.63**              | **0.63**                    |
+| User       | Test CER (Greedy) | Test CER (Beam Search) | Test Loss (Greedy) | Test Loss (Beam Search) |
+|------------|-------------------|-------------------------|--------------------|--------------------------|
+| User0      | 20.57%            | 20.57%                  | 1.17               | 1.17                     |
+| User1      | 10.32%            | 10.32%                  | 0.65               | 0.65                     |
+| User2      | 8.41%             | 8.41%                   | 0.51               | 0.51                     |
+| User3      | 8.93%             | 8.93%                   | 0.47               | 0.47                     |
+| User4      | 7.91%             | 7.91%                   | 0.37               | 0.37                     |
+| User5      | 5.81%             | 5.81%                   | 0.38               | 0.38                     |
+| User6      | 14.06%            | 14.06%                  | 0.84               | 0.84                     |
+| **Average**| **10.86%**        | **10.86%**              | **0.63**           | **0.63**                 |
 
 > *TODO - Check if the numbers above are correct (they're taken from the report).*
 > 
