@@ -17,9 +17,9 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | User6  | 14.06%   | 0.84               | 0.84                     |
 | **Average** | **10.86%**  | **0.63**              | **0.63**                    |
 
-> *Check if the numbers above are correct (they're taken from the report).*
+> *TODO - Check if the numbers above are correct (they're taken from the report).*
 > 
-> *Add a disclaimer about the testing procedure (model, # of epochs for training, size of the test set, etc.).*
+> *TODO - Add a disclaimer about the testing procedure (model, # of epochs for training, size of the test set, etc.).*
 
 ## Experiments
 
@@ -36,11 +36,11 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 - [ ] **Experiment with hand animation (if time permits)**:
   - [ ] Explore and incorporate the [emg2pose](https://github.com/facebookresearch/emg2pose) dataset  
 
-> *Add a summary of changes.*
+> *TODO - Add a summary of changes.*
 
 ## Results
 
-> *Add a table with results after final experiments.*
+> *TODO - Add a table with results after final experiments.*
   
 ## Acknowledgements
 
