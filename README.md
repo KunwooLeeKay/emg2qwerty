@@ -27,7 +27,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 - [ ] **Experiment with data preprocessing and feature extractors**: 
   - [ ] Modify the data loader to use past data only (suitable for online inference)  
-  - [ ] Run training with a new band-pass filter (up to 500 Hz)  
+  - [ ] Run training with new band-pass filters (40 Hz high-pass and 500 Hz low-pass)
 - [ ] **Experiment with the model**: 
   - [ ] Incorporate transformer encoder
   - [ ] Incorporate LM module
