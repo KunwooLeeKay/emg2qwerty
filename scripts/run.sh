@@ -12,7 +12,7 @@ module load cuda/12.6.1          # Ensure correct CUDA version
 module load python/3.8.6         # Use the correct Python version
 
 # Activate Conda
-source ~/miniconda3/etc/profile.d/conda.sh
+source $(conda info --base)/etc/profile.d/conda.sh
 conda activate emg2qwerty
 pip install hydra-core --quiet
 
