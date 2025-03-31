@@ -17,7 +17,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | User6      | 14.06%            | 8.83%                  | 0.84               | 0.73                     |
 | **Average**| **10.86%**        | **6.709%**              | **0.63**           | **0.612**                 |
 
-> *TODO - Check if the numbers above are correct (they're taken from the report).*
+> *TODO - Check if the numbers above are correct (they're taken from the report) + maybe drop info about loss and show val vs test.*
 > 
 > *TODO - Add a disclaimer about the testing procedure (model (generic or personalized),  size of the test set, etc.) - see Table 3 in Meta report.*
 
