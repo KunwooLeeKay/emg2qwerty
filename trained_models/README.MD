@@ -18,7 +18,7 @@ Epoch limit = 100, generic model only
 
 
 
-### Results ### <- please add your model here
+### Results <- please add your model here
 | Models         | Decoding | Language Model | Input Format | val CER | test CER | val loss | test loss | val IER | test IER | val DER | test DER | val SER | test SER |
 |----------------|----------|----------------|--------------|---------|----------|----------|-----------|---------|----------|---------|----------|---------|----------|
 | Baseline - Acausal | Greedy   | None           | Unchanged    | 55.57   | 55.38    | -        | -         | -       | -        | -       | -        | -       | -        |
