@@ -27,6 +27,12 @@ Epoch limit = 100, generic model only
 | test SER |
 
 
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Value 1  | Value 2  | Value 3  |
+| Value A  | Value B  | Value C  |
+
+
 
 {'val_metrics': [{'val/loss': 0.9406100511550903,
                   'val/CER': 24.982807159423828,
