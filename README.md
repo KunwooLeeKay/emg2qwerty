@@ -49,8 +49,8 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | Trained on past-only data @Kunwoo                  |         |         |         |         |         |         |
 | New band-pass filters (40–500 Hz) @Pushkar         |         |         |         |         |         |         |
 | Additional data augmentations (?)                  |         |         |         |         |         |         |
-| Transformer Encoder v1 @Chaeeun                    |         |         |         |         |         |         |
-| Transformer Encoder v2                             |         |         |         |         |         |         |
+| Transformer Encoder v1 (d_model = 4) @Chaeeun                    | 24.64%  |         |         |         |         |         |
+| Transformer Encoder v2 (d_model = 768)                            | 32.55%   |         |         |         |         |         |
 | Conformer v1                                       |         |         |         |         |         |         |
 | New LM module @Dhivya                              |         |         |         |         |         |         |
 
