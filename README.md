@@ -43,14 +43,14 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 | Model Benchmark    | Val CER (Greedy) | Test CER (Offline, Greedy) | Test CER (Online, Greedy) | Val CER (Beam) | Test CER (Offline, Beam) | Test CER (Online, Beam) |
 |--------------------|------------------|----------------------------|---------------------------|----------------|--------------------------|-------------------------|
-| Meta baseline (reproduced)         |    TODO     |    10.86%   |    n/a      |    TODO     |    6.71%    |    n/a     |
-| Trained on past-only data          |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
-| New band-pass filters (40–500 Hz)  |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
-| Additional data augmentations (?)  |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
-| Transformer Encoder v1             |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
-| Transformer Encoder v2 (w/ PE)     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
-| Conformer v1                       |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
-| New LM module (?)                  |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
+| Meta baseline (reproduced)                         |         |    10.86%   |    n/a      |         |    6.71%    |    n/a     |
+| Trained on past-only data @Kunwoo                  |         |         |         |         |         |         |
+| New band-pass filters (40–500 Hz) @Pushkar         |         |         |         |         |         |         |
+| Additional data augmentations (?)                  |         |         |         |         |         |         |
+| Transformer Encoder v1 @Chaeeun                    |         |         |         |         |         |         |
+| Transformer Encoder v2                             |         |         |         |         |         |         |
+| Conformer v1                                       |         |         |         |         |         |         |
+| New LM module @Dhivya                              |         |         |         |         |         |         |
 
 Note. All results are averaged across subjects. Offline inference = Acausal (±900ms past / ±100ms future). Online inference = Causal (1000ms past-only)
 
