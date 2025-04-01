@@ -12,19 +12,19 @@ Epoch limit = 100, generic model only
 | Language Model | None | None |
 |----------|----------|----------|
 | val CER | Value 2  | 24.9828  |
-| test CER | Value C  |  |
+| test CER | Value C  | - |
 |----------|----------|----------|
-| val loss |  | 0.9406 |
-| test loss |  | 2.4479 |
+| val loss | - | 0.9406 |
+| test loss | - | 2.4479 |
 |----------|----------|----------|
-| val IER |  | 6.74163 |
-| test IER |
+| val IER | - | 6.74163 |
+| test IER | - | - |
 |----------|----------|----------|
-| val DER |  | 2.9231 |
-| test DER |
+| val DER | - | 2.9231 |
+| test DER | - | - |
 |----------|----------|----------|
-| val SER |  | 15.3181 |
-| test SER |
+| val SER | - | 15.3181 |
+| test SER | - | - |
 
 
 | Column 1 | Column 2 | Column 3 |
