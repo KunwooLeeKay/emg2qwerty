@@ -6,10 +6,10 @@ Epoch limit = 100, generic model only
 1. Baseline - Causal (no change in architecture, only changed window padding)
 
 | Model Name     | Baseline - Acausal | Baseline - Causal |
+|----------------|--------------------|-------------------|
 | Decoding       | Greedy             | Greedy            |
 | Language Model | None               | None              |
 | Input Format   | Unchanged          | Unchanged         |
-|----------------|--------------------|-------------------|
 | val CER        | 55.57              | 24.9828           |
 | test CER       | 55.38              | 58.3192           |
 | val loss       | -                  | 0.9406            |
