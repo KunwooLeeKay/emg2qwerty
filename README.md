@@ -8,7 +8,7 @@ This project explores the use of surface electromyography (sEMG) signals as an a
 
 We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresearch/emg2qwerty), which uses the Meta emg2qwerty dataset - the largest publicly available sEMG-to-keyboard dataset. Below is our reproduced baseline:
 
-| User       | Val CER (Greedy) | Test CER (Greedy) | Val CER (Beam Search) | Test CER (Beam Search) |
+| User       | Val CER (Greedy) | Test CER (Greedy) | Val CER (Beam)         | Test CER (Beam)         |
 |------------|------------------|-------------------|------------------------|-------------------------|
 | User0      |                  | 20.57%            |                        | 15.04%                  |
 | User1      |                  | 10.32%            |                        | 6.18%                   |
@@ -19,7 +19,9 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | User6      |                  | 14.06%            |                        | 8.83%                   |
 | **Average**|                  | **10.86%**        |                        | **6.71%**               |
 
-> TODO - @Dhivya Sreedhar, do Beam Search results come with or without the LM module (I see the default is without LM)? Are they from generic or personalized models?
+**Note**: Beam Search results are [with/without] the LM module. The model used is [choose one]: (1) the generic model, (2) personalized models initialized with random weights, or (3) personalized models initialized with the generic model weights.
+
+> TODO - @Dhivya Sreedhar, pls edit the note above. 
 
 ## Experiments
 
@@ -52,7 +54,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | Conformer v1                                       |         |         |         |         |         |         |
 | New LM module @Dhivya                              |         |         |         |         |         |         |
 
-Note: All results are averaged across subjects. Offline inference = Acausal (±900ms past / ±100ms future). Online inference = Causal (1000ms past-only)
+**Note**: All results are averaged across subjects. Offline inference = Acausal (±900ms past / ±100ms future). Online inference = Causal (1000ms past-only)
 
 > TODO - Add results + be clear about configs for each. Ideally, we need to have a separate config for each. 
   
