@@ -10,14 +10,14 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 | User       | Val CER (Greedy) | Test CER (Greedy) | Val CER (Beam)         | Test CER (Beam)         |
 |------------|------------------|-------------------|------------------------|-------------------------|
-| User0      |                  | 20.57%            |                        | 15.04%                  |
-| User1      |                  | 10.32%            |                        | 6.18%                   |
-| User2      |                  | 8.41%             |                        | 5.08%                   |
-| User3      |                  | 8.93%             |                        | 4.74%                   |
-| User4      |                  | 7.91%             |                        | 3.90%                   |
-| User5      |                  | 5.81%             |                        | 3.16%                   |
-| User6      |                  | 14.06%            |                        | 8.83%                   |
-| **Average**|                  | **10.86%**        |                        | **6.71%**               |
+| User0      |    17.96%         | 20.57%            |     13.71%                  | 15.04%                  |
+| User1      |    8.39%             | 10.32%            |  6.11%                      | 6.18%                   |
+| User2      |     8.16%             | 8.41%             |  6.22%                      | 5.08%                   |
+| User3      |      9.54%            | 8.93%             |  6.50%                      | 4.74%                   |
+| User4      |      7.57%            | 7.91%             |  5.23%                      | 3.90%                   |
+| User5      |      7.15%            | 5.81%             |   5.51%                     | 3.16%                   |
+| User6      |       15.19%           | 14.06%            |     12.3%                   | 8.83%                   |
+| **Average**|       **10.42%**          | **10.86%**        |     **7.94%**                  | **6.71%**               |
 
 **Note**: Beam Search results are [with/without] the LM module. The model used is [choose one]: (1) the generic model, (2) personalized models initialized with random weights, or (3) personalized models initialized with the generic model weights.
 
