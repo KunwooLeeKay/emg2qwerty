@@ -2,7 +2,7 @@
 
 This project explores the use of surface electromyography (sEMG) signals as an alternative input modality for typing. Our goal is to develop a system that maps wrist-based muscle activity to keyboard input, while optionally generating realistic hand animations to enhance immersion in virtual environments. It's a part of [CMU 11-785: Introduction to Deep Learning](https://deeplearning.cs.cmu.edu/S25/index.html).
 
-> Check the project title.
+> TODO - Update the project title at the end.
 
 ## Baseline
 
@@ -54,7 +54,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 Note. All results are averaged across subjects. Offline inference = Acausal (±900ms past / ±100ms future). Online inference = Causal (1000ms past-only)
 
-> TODO - Add results + explain configs for each.
+> TODO - Add results + be clear about configs for each. Ideally, we need to have a separate config for each. 
   
 ## Acknowledgements
 
