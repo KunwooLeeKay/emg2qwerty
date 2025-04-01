@@ -19,7 +19,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | User6      |                  | 14.06%            |                        | 8.83%                   |
 | **Average**|                  | **10.86%**        |                        | **6.71%**               |
 
-> TODO - @Dhivya Sreedhar, do Beam Search results come with or without the LM module? Are they from generic or personalized models?
+> TODO - @Dhivya Sreedhar, do Beam Search results come with or without the LM module (I see the default is without LM)? Are they from generic or personalized models?
 
 ## Experiments
 
