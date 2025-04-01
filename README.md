@@ -52,7 +52,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | Conformer v1                                       |         |         |         |         |         |         |
 | New LM module @Dhivya                              |         |         |         |         |         |         |
 
-Note. All results are averaged across subjects. Offline inference = Acausal (±900ms past / ±100ms future). Online inference = Causal (1000ms past-only)
+Note: All results are averaged across subjects. Offline inference = Acausal (±900ms past / ±100ms future). Online inference = Causal (1000ms past-only)
 
 > TODO - Add results + be clear about configs for each. Ideally, we need to have a separate config for each. 
   
