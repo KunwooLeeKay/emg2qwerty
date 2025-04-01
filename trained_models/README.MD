@@ -4,12 +4,35 @@ Epoch limit = 100, generic model only
 
 ### Kunwoo ###
 1. Causal baseline (no change in architecture)
-- model performance
+- model performance (Greedy Decoding)
+| Model Name | Baseline - Acausal | Baseline - Causal |
+|----------|----------|----------|
+| Decoding | Greedy | Greedy |
+|----------|----------|----------|
+| Language Model | None | None |
+|----------|----------|----------|
+| val CER | Value 2  | 24.9828  |
+| test CER | Value C  |  |
+|----------|----------|----------|
+| val loss |  | 0.9406 |
+| test loss |  | 2.4479 |
+|----------|----------|----------|
+| val IER |  | 6.74163 |
+| test IER |
+|----------|----------|----------|
+| val DER |  | 2.9231 |
+| test DER |
+|----------|----------|----------|
+| val SER |  | 15.3181 |
+| test SER |
+
+
+
 {'val_metrics': [{'val/loss': 0.9406100511550903,
                   'val/CER': 24.982807159423828,
                   'val/IER': 6.741629600524902,
                   'val/DER': 2.9231131076812744,
-                  'val/SER': 15.318068504333496}],
+                  'val/SER': 15.318068504333496}], 
  'test_metrics': [{'test/loss': 2.44797682762146,
                    'test/CER': 58.319183349609375,
                    'test/IER': 22.919342041015625,
