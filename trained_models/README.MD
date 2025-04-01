@@ -21,6 +21,11 @@ Epoch limit = 100, generic model only
 | val SER        | -                  | 15.3181           |
 | test SER       | -                  | 34.8062           |
 
+| Models         | Decoding | Language Model | Input Format | val CER | test CER | val loss | test loss | val IER | test IER | val DER | test DER | val SER | test SER |
+|----------------|----------|----------------|--------------|---------|----------|----------|-----------|---------|----------|---------|----------|---------|----------|
+| Baseline - Acausal | Greedy   | None           | Unchanged    | 55.57   | 55.38    | -        | -         | -       | -        | -       | -        | -       | -        |
+| Baseline - Causal  | Greedy   | None           | Unchanged    | 24.9828 | 58.3192  | 0.9406   | 2.4479    | 6.74163 | 22.9193  | 2.9231  | 0.5936   | 15.3181 | 34.8062  |
+
 - model checkpoint : https://drive.google.com/file/d/1h5Qu18zS3yhjNRHTwMf3MSnmW6_rwQIV/view?usp=share_link
 
 
