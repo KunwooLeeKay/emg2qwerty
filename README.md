@@ -50,7 +50,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | Transformer Encoder v1             |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
 | Transformer Encoder v2 (w/ PE)     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
 | Conformer v1                       |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
-| New LM module                      |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
+| New LM module (?)                  |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |    TODO     |
 
 Note. All results are averaged across subjects. Offline inference = Acausal (±900ms past / ±100ms future). Online inference = Causal (1000ms past-only)
 
