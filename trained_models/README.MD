@@ -10,11 +10,15 @@ Epoch limit = 100, generic model only
 - model architecture : https://drive.google.com/file/d/1p1Rjsq2it5xOEp8DYc84-WpSoL3JI0Yv/view?usp=share_link
 - model checkpoint : Training!
 
+### Chaeeun ### 
+
+### Dhivya ### 
+
+### Pushkar ###
 
 
 
-
-### Results ###
+### Results ### <- please add your model here
 | Models         | Decoding | Language Model | Input Format | val CER | test CER | val loss | test loss | val IER | test IER | val DER | test DER | val SER | test SER |
 |----------------|----------|----------------|--------------|---------|----------|----------|-----------|---------|----------|---------|----------|---------|----------|
 | Baseline - Acausal | Greedy   | None           | Unchanged    | 55.57   | 55.38    | -        | -         | -       | -        | -       | -        | -       | -        |
