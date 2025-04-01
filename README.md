@@ -32,7 +32,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 - [ ] **Experiment with the model**: 
   - [ ] Incorporate transformer encoder / conformer / etc. 
 - [ ] **Experiment with the inference**:
-  - [ ] Incorporate a proper LM module
+  - [ ] Incorporate a new LM module (explore more-gram models or even word-level)
   - [ ] Include test results for online inference
 - [ ] **Experiment with hand animation (if time permits)**:
   - [ ] Explore and incorporate the [emg2pose](https://github.com/facebookresearch/emg2pose) dataset  
