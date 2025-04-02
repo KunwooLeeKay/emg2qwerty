@@ -46,7 +46,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | Meta **generic** baseline (from Meta's paper)            |  55.57% ± 4.40     |    55.38% ± 4.10   |    n/a      |  52.10% ± 5.54   |    51.78% ± 4.61   |    n/a     |
 | Meta **personalized** baseline (from Meta's paper)       |  11.39% ± 4.28     |    11.28% ± 4.45   |    n/a      |  8.31% ± 3.19    |    6.95% ± 3.61    |    n/a     |
 | Meta **personalized** baseline (reproduced)              |     10.42%         |    10.86%          |    n/a      |    7.94%         |    6.71%           |    n/a     |
-| Causal **generic** (trained on past-only data) @Kunwoo           |  24.98%            |   58.32%           |         |         |         |         |
+| Causal **generic** (trained on past-only data) @Kunwoo   |  24.98%            |   58.32%           |  ~20% (tbc) |         |         |         |
 | New band-pass filters (40–500 Hz) @Pushkar                    |               |         |         |         |         |         |
 | Additional data augmentations @Pushkar                        |         |         |         |         |         |         |
 | Transformer Encoder v1 (d_model = 4) @Chaeeun                 | 24.64%  |         |         |         |         |         |
