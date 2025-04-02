@@ -8,7 +8,7 @@ Epoch limit = 100, generic model only
 
 2. TDS encoder + Attention decoder (No change to encoder)
 - model architecture : https://drive.google.com/file/d/1p1Rjsq2it5xOEp8DYc84-WpSoL3JI0Yv/view?usp=share_link
-- model checkpoint : Training!
+- model checkpoint : https://drive.google.com/file/d/1echvLaG5DVn0_0dt16nIQqpl6E2WgErx/view?usp=share_link
 
 ### Chaeeun ### 
 
