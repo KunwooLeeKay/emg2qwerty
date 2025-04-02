@@ -19,7 +19,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | User6      |       15.19%           | 14.06%            |     12.3%                   | 8.83%                   |
 | **Average**|       **10.42%**          | **10.86%**        |     **7.94%**                  | **6.71%**               |
 
-**Note**: The model used is personalized. Beam Search results are with the LM module. 
+**Note**: We use a personalized model. Beam Search results are with the LM module. 
 
 ## Experiments
 
@@ -33,7 +33,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
   - [ ] Incorporate transformer encoder / conformer / etc. 
 - [ ] **Experiment with the inference**:
   - [ ] Incorporate a new LM module (explore character- vs word-level LM module + check gpt-2 style modules on top)
-  - [ ] Include test results for online inference
+  - [x] Include test results for online inference
 - [ ] **Experiment with hand animation (if time permits)**:
   - [ ] Explore and incorporate the [emg2pose](https://github.com/facebookresearch/emg2pose) dataset  
 
@@ -53,9 +53,15 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | Conformer v1                                       |         |         |         |         |         |         |
 | New LM module @Dhivya                              |         |         |         |         |         |         |
 
-**Note**: All results are averaged across subjects. Offline inference = Acausal (±900ms past / ±100ms future). Online inference = Causal (1000ms past-only)
+**Note**: 
+- 100 epochs of training.
+- For each run, we use a generic model, but we reproduced Meta baseline using a personalized model. 
+- Offline inference = Acausal (±900ms past / ±100ms future).
+- Online inference = Causal (1000ms past-only).
+- Beam Search results are with the LM module. A default one is a 6-gram LM. 
+- Val/test results are averaged across subjects.
 
-> TODO - Add results + be clear about configs for each. Ideally, we need to have a separate config for each. 
+> TODO - Add results + have a separate config for each run. 
   
 ## Acknowledgements
 
