@@ -21,8 +21,6 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 **Note**: Beam Search results are [with/without] the LM module. The model used is [choose one]: (1) the generic model, (2) personalized models initialized with random weights, or (3) personalized models initialized with the generic model weights.
 
-> TODO - @Dhivya Sreedhar, pls edit the note above. 
-
 ## Experiments
 
 ### Long list of ideas:
