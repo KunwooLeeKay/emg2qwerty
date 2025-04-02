@@ -43,15 +43,17 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 | Model Benchmark    | Val CER (Greedy) | Test CER (Offline, Greedy) | Test CER (Online, Greedy) | Val CER (Beam) | Test CER (Offline, Beam) | Test CER (Online, Beam) |
 |--------------------|------------------|----------------------------|---------------------------|----------------|--------------------------|-------------------------|
-| Meta baseline (reproduced)                         |         |    10.86%   |    n/a      |         |    6.71%    |    n/a     |
-| Trained on past-only data @Kunwoo                  |         |         |         |         |         |         |
-| New band-pass filters (40–500 Hz) @Pushkar         |         |         |         |         |         |         |
-| Additional data augmentations (?)                  |         |         |         |         |         |         |
-| Transformer Encoder v1 (d_model = 4) @Chaeeun      | 24.64%  |         |         |         |         |         |
-| Transformer Encoder v2 (d_model = 768) @Chaeeun    | 32.55%   |         |         |         |         |         |
+| Meta generic baseline (from Meta's paper)            |  55.57% ± 4.40     |    55.38% ± 4.10   |    n/a      |  52.10% ± 5.54   |    51.78% ± 4.61   |    n/a     |
+| Meta personalized baseline (from Meta's paper)       |  11.39% ± 4.28     |    11.28% ± 4.45   |    n/a      |  8.31% ± 3.19    |    6.95% ± 3.61    |    n/a     |
+| Meta personalized baseline (reproduced)              |     10.42%         |    10.86%          |    n/a      |    7.94%         |    6.71%           |    n/a     |
+| Trained on past-only data @Kunwoo                             |         |         |         |         |         |         |
+| New band-pass filters (40–500 Hz) @Pushkar                    |         |         |         |         |         |         |
+| Additional data augmentations (?)                             |         |         |         |         |         |         |
+| Transformer Encoder v1 (d_model = 4) @Chaeeun                 | 24.64%  |         |         |         |         |         |
+| Transformer Encoder v2 (d_model = 768) @Chaeeun               | 32.55%   |         |         |         |         |         |
 | Transformer Encoder v3 (d_model = 768, dim_feedforward=256) @Chaeeun | 37.34%   |         |         |         |         |         |
-| Conformer v1                                       |         |         |         |         |         |         |
-| New LM module @Dhivya                              |         |         |         |         |         |         |
+| Conformer v1                                                  |         |         |         |         |         |         |
+| New LM module @Dhivya                                         |         |         |         |         |         |         |
 
 **Note**: 
 - 100 epochs of training.
