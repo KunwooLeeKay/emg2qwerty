@@ -19,7 +19,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | User6      |       15.19%           | 14.06%            |     12.3%                   | 8.83%                   |
 | **Average**|       **10.42%**          | **10.86%**        |     **7.94%**                  | **6.71%**               |
 
-**Note**: Beam Search results are with the LM module. The model used is [choose one]: (1) the generic model, (2) personalized models initialized with random weights, or (3) personalized models initialized with the generic model weights.
+**Note**: The model used is personalized. Beam Search results are with the LM module. 
 
 ## Experiments
 
