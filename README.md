@@ -55,7 +55,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 **Note**: 
 - 100 epochs of training.
-- For each run, we use a generic model, but we reproduced Meta baseline using a personalized model. 
+- For each run, we use a generic model, but we reproduced the Meta baseline using a personalized model. 
 - Offline inference = Acausal (±900ms past / ±100ms future).
 - Online inference = Causal (1000ms past-only).
 - Beam Search results are with the LM module. A default one is a 6-gram LM. 
