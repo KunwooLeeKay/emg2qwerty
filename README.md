@@ -49,7 +49,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | Additional data augmentations (?)                  |         |         |         |         |         |         |
 | Transformer Encoder v1 (d_model = 4) @Chaeeun      | 24.64%  |         |         |         |         |         |
 | Transformer Encoder v2 (d_model = 768) @Chaeeun    | 32.55%   |         |         |         |         |         |
-| Transformer Encoder v3 (d_model = 768, dim_feedforward=256) @Chaeeun | 32.55%   |         |         |         |         |         |
+| Transformer Encoder v3 (d_model = 768, dim_feedforward=256) @Chaeeun | 37.34%   |         |         |         |         |         |
 | Conformer v1                                       |         |         |         |         |         |         |
 | New LM module @Dhivya                              |         |         |         |         |         |         |
 
