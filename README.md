@@ -53,7 +53,7 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | Transformer Encoder v2 (d_model = 768) @Chaeeun               | 32.55%   |         |         |         |         |         |
 | Transformer Encoder v3 (d_model = 768, dim_feedforward=256) @Chaeeun | 37.34%   |         |         |         |         |         |
 | Conformer v1                                                  |         |         |         |         |         |         |
-| New LM module @Dhivya                                         |         |         |         |         |         |         |
+| Model [add name] + a new LM module v1 @Dhivya                    |   n/a      |    n/a      |     n/a     |         |         |         |
 
 **Note**: 
 - 100 epochs of training.
