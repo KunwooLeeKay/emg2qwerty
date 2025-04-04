@@ -45,15 +45,17 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 |------|------------------------------------------------------------------|------------------|-----------------------------|----------------------------|----------------|----------------------------|---------------------------|
 | **1**  | Meta **generic** baseline (from Meta's paper)                  | 55.57% ± 4.40     | 55.38% ± 4.10               | n/a                        | 52.10% ± 5.54   | 51.78% ± 4.61              | n/a               |
 | **2**  | Meta **personalized** baseline (from Meta's paper)             | 11.39% ± 4.28     | 11.28% ± 4.45               | n/a                        | 8.31% ± 3.19    | 6.95% ± 3.61               | n/a        |
-| **3**  | Meta **personalized** baseline (reproduced)                    | 10.42%            | 10.86%                      | n/a                        | 7.94%          | 6.71%                      | n/a                  |
-| **4**  | Causal **generic** (trained on past-only data) @Kunwoo         | 24.98%            | 58.32%                      | ~20% (tbc)                 |                |                            |                          |
-| **5**  | New band-pass filters (40–500 Hz) @Pushkar                     |                  |                             |                            |                |                            |                          |
-| **6**  | Additional data augmentations @Pushkar                         |                  |                             |                            |                |                            |                           |
-| **7**  | Transformer Encoder v1 (d_model = 4) @Chaeeun                  | 24.64%            |                             |                            |                |                            |                           |
-| **8**  | Transformer Encoder v2 (d_model = 768) @Chaeeun                | 32.55%            |                             |                            |                |                            |                           |
-| **9**  | Transformer Encoder v3 (d_model = 768, FF = 256) @Chaeeun      | 37.34%            |                             |                            |                |                            |                           |
-| **10** | Conformer v1                                                   |                  |                             |                            |                |                            |                           |
-| **11** | Model [pick a number] + new LM module v1 @Dhivya               | n/a              | n/a                         | n/a                        |                |                            |                           |
+| **3**  | Meta **personalized** baseline (reproduced)                    | 10.42%            | 10.86%                      | n/a                        | 7.94%          | 6.71%                      | n/a             |
+| **4**  | Causal **generic** (trained on past-only data) @Kunwoo         | 24.98%            | 58.32%                      | ~20% (tbc)                 |                |                            |               |
+| **5**  | New band-pass filters (40–500 Hz) @Pushkar                     |                  |                             |                            |                |                            |                     |
+| **6**  | Additional data augmentations @Pushkar                         |                  |                             |                            |                |                            |                      |
+| **7**  | Transformer Encoder v1 (d_model = 4) @Chaeeun                  | 24.64%            |                             |                            |                |                            |               |
+| **8**  | Transformer Encoder v2 (d_model = 768) @Chaeeun                | 32.55%            |                             |                            |                |                            |                     |
+| **9**  | Transformer Encoder v3 (d_model = 768, FF = 256) @Chaeeun      | 37.34%            |                             |                            |                |                            |          |
+| **10**  | Transformer Decoder v1 @Kunwoo                                | 41.20%            |                             |                            |                |                            |          |
+| **11** | Conformer v1                                                   |                  |                             |                            |                |                            |                  |
+| **12** | Model [pick a number] + new LM module v1 @Dhivya               | n/a              | n/a                         | n/a                        |                |                            |                     |
+
 
 **Note**: 
 - 100 epochs of training.
