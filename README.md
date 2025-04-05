@@ -27,13 +27,12 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 - [ ] **Experiment with data preprocessing and feature extractors**: 
   - [x] Modify the data loader to use past-only data for training  
-  - [ ] Run training with new band-pass filters (40 Hz high-pass and 500 Hz low-pass)
-  - [ ] Play with data pre-processing and augmentations 
+  - [x] Run training with new band-pass filters (40 Hz high-pass and 500 Hz low-pass)
 - [ ] **Experiment with the model**: 
   - [ ] Incorporate transformer encoder / conformer / etc. 
 - [ ] **Experiment with the inference**:
   - [ ] Incorporate a new LM module (explore character- vs word-level LM module + check gpt-2 style modules on top)
-  - [x] Include test results for online inference
+  - [ ] Include test results for online inference
 - [ ] **Experiment with hand animation (if time permits)**:
   - [ ] Explore and incorporate the [emg2pose](https://github.com/facebookresearch/emg2pose) dataset  
 
@@ -41,20 +40,21 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 
 ## Results
 
-| #    | Model Benchmark                                                  | Val CER (Greedy) | Test CER (Offline, Greedy) | Test CER (Online, Greedy) | Val CER (Beam) | Test CER (Offline, Beam) | Test CER (Online, Beam) |
-|------|------------------------------------------------------------------|------------------|-----------------------------|----------------------------|----------------|----------------------------|---------------------------|
-| **1**  | Meta **generic** baseline (from Meta's paper)                  | 55.57% ± 4.40     | 55.38% ± 4.10               | n/a                        | 52.10% ± 5.54   | 51.78% ± 4.61              | n/a               |
-| **2**  | Meta **personalized** baseline (from Meta's paper)             | 11.39% ± 4.28     | 11.28% ± 4.45               | n/a                        | 8.31% ± 3.19    | 6.95% ± 3.61               | n/a        |
-| **3**  | Meta **personalized** baseline (reproduced)                    | 10.42%            | 10.86%                      | n/a                        | 7.94%          | 6.71%                      | n/a             |
-| **4**  | Causal **generic** (trained on past-only data) @Kunwoo         | 24.98%            | 58.32%                      | ~20% (tbc)                 |                |                            |               |
-| **5**  | New band-pass filters (40–500 Hz) @Pushkar                     | 27.06%           |   56.95%                   |                            |                |                            |                     |
-| **6**  | Transformer Encoder v1 (d_model = 4) @Chaeeun                  | 24.64%            |                             |                            |                |                            |               |
-| **7**  | Transformer Encoder v2 (d_model = 768) @Chaeeun                | 32.55%            |                             |                            |                |                            |                     |
-| **8**  | Transformer Encoder v3 (d_model = 768, FF = 256) @Chaeeun      | 37.34%            |                             |                            |                |                            |          |
-| **9**  | Transformer Decoder v1 @Kunwoo                                | 41.20%            |                             |                            |                |                            |          |
-| **10** | Conformer v1  @Kunwoo                                                  |                  |                             |                            |                |                            |                  |
-| **11** | Model [pick a number] + new LM module v1 @Dhivya               | n/a              | n/a                         | n/a                        |                |                            |                     |
-
+| #    | Model Benchmark                                  | Val CER (Greedy) | Test CER (Offline, Greedy) | Test CER (Online, Greedy) | Val CER (Beam) | Test CER (Offline, Beam) | Test CER (Online, Beam) |
+|------|------------------------------------------------------------------|------------------|-------------------|-------------------|----------------|----------------------------|---------------------------|
+| **1**  | Meta **generic** baseline (from Meta's paper)                  | 55.57% ± 4.40     | 55.38% ± 4.10               | n/a              | 52.10% ± 5.54   | 51.78% ± 4.61              | n/a               |
+| **2**  | Meta **personalized** baseline (from Meta's paper)             | 11.39% ± 4.28     | 11.28% ± 4.45               | n/a                    | 8.31% ± 3.19    | 6.95% ± 3.61               | n/a        |
+| **3**  | Meta **personalized** baseline (reproduced)                    | 10.42%            | 10.86%                      | n/a                  | 7.94%          | 6.71%                      | n/a             |
+| **4**  | Causal **generic** (trained on past-only data) @Kunwoo         | 24.98%            | 58.32%                      | ~20% (tbc)                 |                |                            |  |
+| **5**  | New band-pass filters (40–500 Hz) @Pushkar                     | 27.06%           |   56.95%                   |                            |                |                       |               |
+| **6**  | Transformer Encoder v1 (d_model = 4) @Chaeeun                  | 24.64%            |                             |            |                |                       |               |
+| **7**  | Transformer Encoder v2 (d_model = 768) @Chaeeun                | 32.55%            |                             |            |                |                       |               |
+| **8**  | Transformer Encoder v3 (d_model = 768, FF = 256) @Chaeeun      | 37.34%            |                             |            |                |                       |               |
+| **9**  | Attention in the Decoder v1 @Kunwoo                            | 41.20%            |                             |            |                |                       |               |
+| **10** | Conformer v1  @Kunwoo                                          |                   |                             |            |                |                       |               |
+| **11** | Model [pick a number] + new LM module v1 @Dhivya               | n/a               | n/a                         | n/a        |                |                       |               |
+| **12**  | Transformer Encoder v4 (...) @Chaeeun      |            |                             |            |                |                       |               |
+| **13**  | Transformer Encoder v5 (...) @Pushkar      |            |                             |            |                |                       |               |
 
 **Note**: 
 - 100 epochs of training.
