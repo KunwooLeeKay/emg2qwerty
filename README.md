@@ -56,6 +56,8 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
 | **12**  | Transformer Encoder v4 (...) @Chaeeun      |            |                             |            |                |                       |               |
 | **13**  | Transformer Encoder v5 (...) @Pushkar      |            |                             |            |                |                       |               |
 
+> TODO - Add a link to the ablation sheet. 
+
 **Note**: 
 - 100 epochs of training.
 - For each run, we use a generic model, but we reproduced the Meta baseline using a personalized model. 
