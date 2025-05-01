@@ -1,27 +1,22 @@
 # Typing Reinvented: Towards Hands-Free Input via sEMG
 
-This project explores the use of surface electromyography (sEMG) signals as an alternative input modality for typing. Our goal is to develop a system that maps wrist-based muscle activity to keyboard input, while optionally generating realistic hand animations to enhance immersion in virtual environments. 
+This project explores the use of surface electromyography (sEMG) signals as an alternative input modality for typing. Our goal is to develop a system that maps wrist-based muscle activity to keyboard input. 
 
-## Baseline
+## Results 
 
-We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresearch/emg2qwerty), which uses the Meta emg2qwerty dataset - the largest publicly available sEMG-to-keyboard dataset. Below is our reproduced baseline:
+<p align="left">
+  <a href="https://drive.google.com/file/d/1ptFljvxhDz1Og_-TxIwuATIsxz8HZnLf/view?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Final%20Report-blue?style=for-the-badge" alt="View Final Report">
+  </a>
+</p>
 
-| User       | Val CER (Greedy) | Test CER (Greedy) | Val CER (Beam)         | Test CER (Beam)         |
-|------------|------------------|-------------------|------------------------|-------------------------|
-| User0      |    17.96%         | 20.57%            |     13.71%                  | 15.04%                  |
-| User1      |    8.39%             | 10.32%            |  6.11%                      | 6.18%                   |
-| User2      |     8.16%             | 8.41%             |  6.22%                      | 5.08%                   |
-| User3      |      9.54%            | 8.93%             |  6.50%                      | 4.74%                   |
-| User4      |      7.57%            | 7.91%             |  5.23%                      | 3.90%                   |
-| User5      |      7.15%            | 5.81%             |   5.51%                     | 3.16%                   |
-| User6      |       15.19%           | 14.06%            |     12.3%                   | 8.83%                   |
-| **Average**|       **10.42%**          | **10.86%**        |     **7.94%**                  | **6.71%**               |
+## Codebase
 
-**Note**: We use a personalized model. Beam Search results are with the LM module. 
+- [`notebooks`](./notebooks): Xxx
 
-## Experiments
+> TODO: Organize the folders and list them here. Also, tell how to run one experiment. 
 
-### Long list of ideas:
+## Long to-do of experiments
 
 - [x] **Experiment with data preprocessing and feature extractors**: 
   - [x] Modify the data loader to use past-only data for training  
@@ -33,10 +28,6 @@ We reference [Meta's Github repo - emg2qwerty](https://github.com/facebookresear
   - [x] Include test results for online inference
 - [ ] **Experiment with hand animation (if time permits)**:
   - [ ] Explore and incorporate the [emg2pose](https://github.com/facebookresearch/emg2pose) dataset  
-
-## Results
-
-> TODO - Add a link to the final report. 
   
 ## Acknowledgements
 
