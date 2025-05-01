@@ -12,7 +12,12 @@ This project explores the use of surface electromyography (sEMG) signals as an a
 
 ## Codebase
 
+- [`config`](./config): Xxx
+- [`emg2qwerty`](./emg2qwerty): Original [emg2qwerty codebase](https://github.com/facebookresearch/emg2qwerty)
+- [`emg2qwerty_v2`](./emg2qwerty_v2): Extensions to the original [emg2qwerty codebase](https://github.com/facebookresearch/emg2qwerty)
 - [`notebooks`](./notebooks): Xxx
+- [`scripts`](./scripts): Xxx
+- [`trained_models`](./trained_models): Xxx
 
 > TODO: Organize the folders and list them here. Also, tell how to run one experiment. 
 
