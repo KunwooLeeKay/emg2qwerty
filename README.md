@@ -25,7 +25,8 @@ This project explores the use of surface electromyography (sEMG) signals as an a
   - [x] Modify the data loader to use past-only data for training  
   - [x] Run training with new band-pass filters (40 Hz high-pass and 500 Hz low-pass)
 - [x] **Experiment with the model**: 
-  - [x] Incorporate transformer encoder / conformer / etc. 
+  - [x] Incorporate transformer encoder
+  - [x] Incorporate conformer
 - [x] **Experiment with the inference**:
   - [x] Incorporate a new LM module (explore character- vs word-level LM module + check gpt-2 style modules on top)
   - [x] Include test results for online inference
