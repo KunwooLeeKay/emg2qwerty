@@ -19,7 +19,7 @@ This project explores the use of surface electromyography (sEMG) signals as an a
 - [`scripts`](./scripts): Scripts to run the code 
 - [`trained_models`](./trained_models): Links to the trained model checkpoints (saved on the Google Drive)
 
-## Long to-do of experiments
+## Experiments to-do list 
 
 - [x] **Experiment with data preprocessing and feature extractors**: 
   - [x] Modify the data loader to use past-only data for training  
