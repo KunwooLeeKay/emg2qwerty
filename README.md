@@ -5,8 +5,8 @@ This project explores the use of surface electromyography (sEMG) signals as an a
 ## Results 
 
 <p align="left">
-  <a href="https://drive.google.com/file/d/1ptFljvxhDz1Og_-TxIwuATIsxz8HZnLf/view?usp=sharing" target="_blank">
-    <img src="https://img.shields.io/badge/View%20Final%20Report-blue?style=for-the-badge" alt="View Final Report">
+  <a href="https://arxiv.org/abs/2511.18213" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Final%20Report-blue?style=for-the-badge" alt="ArXiv Paper">
   </a>
 </p>
 
