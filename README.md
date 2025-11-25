@@ -2,7 +2,7 @@
 
 This project explores the use of surface electromyography (sEMG) signals as an alternative input modality for typing. Our goal is to develop a system that maps wrist-based muscle activity to keyboard input. 
 
-## Results 
+## Paper 
 
 <p align="left">
   <a href="https://arxiv.org/abs/2511.18213" target="_blank">
